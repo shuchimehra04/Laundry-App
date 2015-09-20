@@ -1,444 +1,988 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		E5490F7C1BADD8A900A1455A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5490F7B1BADD8A900A1455A /* main.m */; };
-		E5490F7F1BADD8A900A1455A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5490F7E1BADD8A900A1455A /* AppDelegate.m */; };
-		E5490F821BADD8A900A1455A /* Laundry_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5490F801BADD8A900A1455A /* Laundry_App.xcdatamodeld */; };
-		E5490F851BADD8A900A1455A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5490F841BADD8A900A1455A /* ViewController.m */; };
-		E5490F881BADD8A900A1455A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5490F861BADD8A900A1455A /* Main.storyboard */; };
-		E5490F8A1BADD8A900A1455A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5490F891BADD8A900A1455A /* Images.xcassets */; };
-		E5490F8D1BADD8A900A1455A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5490F8B1BADD8A900A1455A /* LaunchScreen.xib */; };
-		E5490F991BADD8A900A1455A /* Laundry_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5490F981BADD8A900A1455A /* Laundry_AppTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E5490F931BADD8A900A1455A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5490F6E1BADD8A800A1455A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5490F751BADD8A800A1455A;
-			remoteInfo = "Laundry App";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		E5490F761BADD8A900A1455A /* Laundry App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Laundry App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5490F7A1BADD8A900A1455A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5490F7B1BADD8A900A1455A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E5490F7D1BADD8A900A1455A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5490F7E1BADD8A900A1455A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5490F811BADD8A900A1455A /* Laundry_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Laundry_App.xcdatamodel; sourceTree = "<group>"; };
-		E5490F831BADD8A900A1455A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5490F841BADD8A900A1455A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E5490F871BADD8A900A1455A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5490F891BADD8A900A1455A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E5490F8C1BADD8A900A1455A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E5490F921BADD8A900A1455A /* Laundry AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Laundry AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5490F971BADD8A900A1455A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5490F981BADD8A900A1455A /* Laundry_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Laundry_AppTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E5490F731BADD8A800A1455A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5490F8F1BADD8A900A1455A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		E5490F6D1BADD8A800A1455A = {
-			isa = PBXGroup;
-			children = (
-				E5490F781BADD8A900A1455A /* Laundry App */,
-				E5490F951BADD8A900A1455A /* Laundry AppTests */,
-				E5490F771BADD8A900A1455A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		E5490F771BADD8A900A1455A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E5490F761BADD8A900A1455A /* Laundry App.app */,
-				E5490F921BADD8A900A1455A /* Laundry AppTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E5490F781BADD8A900A1455A /* Laundry App */ = {
-			isa = PBXGroup;
-			children = (
-				E5490F7D1BADD8A900A1455A /* AppDelegate.h */,
-				E5490F7E1BADD8A900A1455A /* AppDelegate.m */,
-				E5490F831BADD8A900A1455A /* ViewController.h */,
-				E5490F841BADD8A900A1455A /* ViewController.m */,
-				E5490F861BADD8A900A1455A /* Main.storyboard */,
-				E5490F891BADD8A900A1455A /* Images.xcassets */,
-				E5490F8B1BADD8A900A1455A /* LaunchScreen.xib */,
-				E5490F801BADD8A900A1455A /* Laundry_App.xcdatamodeld */,
-				E5490F791BADD8A900A1455A /* Supporting Files */,
-			);
-			path = "Laundry App";
-			sourceTree = "<group>";
-		};
-		E5490F791BADD8A900A1455A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5490F7A1BADD8A900A1455A /* Info.plist */,
-				E5490F7B1BADD8A900A1455A /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E5490F951BADD8A900A1455A /* Laundry AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				E5490F981BADD8A900A1455A /* Laundry_AppTests.m */,
-				E5490F961BADD8A900A1455A /* Supporting Files */,
-			);
-			path = "Laundry AppTests";
-			sourceTree = "<group>";
-		};
-		E5490F961BADD8A900A1455A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5490F971BADD8A900A1455A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E5490F751BADD8A800A1455A /* Laundry App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5490F9C1BADD8A900A1455A /* Build configuration list for PBXNativeTarget "Laundry App" */;
-			buildPhases = (
-				E5490F721BADD8A800A1455A /* Sources */,
-				E5490F731BADD8A800A1455A /* Frameworks */,
-				E5490F741BADD8A800A1455A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Laundry App";
-			productName = "Laundry App";
-			productReference = E5490F761BADD8A900A1455A /* Laundry App.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E5490F911BADD8A900A1455A /* Laundry AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5490F9F1BADD8A900A1455A /* Build configuration list for PBXNativeTarget "Laundry AppTests" */;
-			buildPhases = (
-				E5490F8E1BADD8A900A1455A /* Sources */,
-				E5490F8F1BADD8A900A1455A /* Frameworks */,
-				E5490F901BADD8A900A1455A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5490F941BADD8A900A1455A /* PBXTargetDependency */,
-			);
-			name = "Laundry AppTests";
-			productName = "Laundry AppTests";
-			productReference = E5490F921BADD8A900A1455A /* Laundry AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E5490F6E1BADD8A800A1455A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "shuchi mehra";
-				TargetAttributes = {
-					E5490F751BADD8A800A1455A = {
-						CreatedOnToolsVersion = 6.1;
-					};
-					E5490F911BADD8A900A1455A = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = E5490F751BADD8A800A1455A;
-					};
-				};
-			};
-			buildConfigurationList = E5490F711BADD8A800A1455A /* Build configuration list for PBXProject "Laundry App" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E5490F6D1BADD8A800A1455A;
-			productRefGroup = E5490F771BADD8A900A1455A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E5490F751BADD8A800A1455A /* Laundry App */,
-				E5490F911BADD8A900A1455A /* Laundry AppTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E5490F741BADD8A800A1455A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5490F881BADD8A900A1455A /* Main.storyboard in Resources */,
-				E5490F8D1BADD8A900A1455A /* LaunchScreen.xib in Resources */,
-				E5490F8A1BADD8A900A1455A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5490F901BADD8A900A1455A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E5490F721BADD8A800A1455A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5490F7F1BADD8A900A1455A /* AppDelegate.m in Sources */,
-				E5490F821BADD8A900A1455A /* Laundry_App.xcdatamodeld in Sources */,
-				E5490F851BADD8A900A1455A /* ViewController.m in Sources */,
-				E5490F7C1BADD8A900A1455A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5490F8E1BADD8A900A1455A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5490F991BADD8A900A1455A /* Laundry_AppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E5490F941BADD8A900A1455A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5490F751BADD8A800A1455A /* Laundry App */;
-			targetProxy = E5490F931BADD8A900A1455A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E5490F861BADD8A900A1455A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5490F871BADD8A900A1455A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E5490F8B1BADD8A900A1455A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5490F8C1BADD8A900A1455A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		E5490F9A1BADD8A900A1455A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		E5490F9B1BADD8A900A1455A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E5490F9D1BADD8A900A1455A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Laundry App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E5490F9E1BADD8A900A1455A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Laundry App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E5490FA01BADD8A900A1455A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Laundry AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laundry App.app/Laundry App";
-			};
-			name = Debug;
-		};
-		E5490FA11BADD8A900A1455A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Laundry AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laundry App.app/Laundry App";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E5490F711BADD8A800A1455A /* Build configuration list for PBXProject "Laundry App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5490F9A1BADD8A900A1455A /* Debug */,
-				E5490F9B1BADD8A900A1455A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5490F9C1BADD8A900A1455A /* Build configuration list for PBXNativeTarget "Laundry App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5490F9D1BADD8A900A1455A /* Debug */,
-				E5490F9E1BADD8A900A1455A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E5490F9F1BADD8A900A1455A /* Build configuration list for PBXNativeTarget "Laundry AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5490FA01BADD8A900A1455A /* Debug */,
-				E5490FA11BADD8A900A1455A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E5490F801BADD8A900A1455A /* Laundry_App.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E5490F811BADD8A900A1455A /* Laundry_App.xcdatamodel */,
-			);
-			currentVersion = E5490F811BADD8A900A1455A /* Laundry_App.xcdatamodel */;
-			path = Laundry_App.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = E5490F6E1BADD8A800A1455A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>03E01BB4C5ACB580F82148A9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AD8EB7E152B76ED1141CC4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0C25F38120316A4D63CF9E1D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7C20B84B43FBE6E9E85CB0EB</string>
+				<string>445E71F80C144FF2F6B96980</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A882FC7F9D8A513B912F47B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>445E71F80C144FF2F6B96980</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>446630F1AE19CFD6C0184068</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4AD8EB7E152B76ED1141CC4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AD8EB7E152B76ED1141CC4E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7C20B84B43FBE6E9E85CB0EB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F6D1BADD8A800A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F781BADD8A900A1455A</string>
+				<string>E5490F951BADD8A900A1455A</string>
+				<string>E5490F771BADD8A900A1455A</string>
+				<string>0C25F38120316A4D63CF9E1D</string>
+				<string>446630F1AE19CFD6C0184068</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F6E1BADD8A800A1455A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>shuchi mehra</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>E5490F751BADD8A800A1455A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+					</dict>
+					<key>E5490F911BADD8A900A1455A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+						<key>TestTargetID</key>
+						<string>E5490F751BADD8A800A1455A</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>E5490F711BADD8A800A1455A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E5490F6D1BADD8A800A1455A</string>
+			<key>productRefGroup</key>
+			<string>E5490F771BADD8A900A1455A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E5490F751BADD8A800A1455A</string>
+				<string>E5490F911BADD8A900A1455A</string>
+			</array>
+		</dict>
+		<key>E5490F711BADD8A800A1455A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5490F9A1BADD8A900A1455A</string>
+				<string>E5490F9B1BADD8A900A1455A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5490F721BADD8A800A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5490F7F1BADD8A900A1455A</string>
+				<string>E5490F821BADD8A900A1455A</string>
+				<string>E5490F851BADD8A900A1455A</string>
+				<string>E5490F7C1BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F731BADD8A800A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>03E01BB4C5ACB580F82148A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F741BADD8A800A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5490F881BADD8A900A1455A</string>
+				<string>E5490F8D1BADD8A900A1455A</string>
+				<string>E5490F8A1BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F751BADD8A800A1455A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E5490F9C1BADD8A900A1455A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E9441C7BFE1D3CAF724B6F07</string>
+				<string>E5490F721BADD8A800A1455A</string>
+				<string>E5490F731BADD8A800A1455A</string>
+				<string>E5490F741BADD8A800A1455A</string>
+				<string>3A882FC7F9D8A513B912F47B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Laundry App</string>
+			<key>productName</key>
+			<string>Laundry App</string>
+			<key>productReference</key>
+			<string>E5490F761BADD8A900A1455A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>E5490F761BADD8A900A1455A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Laundry App.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E5490F771BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F761BADD8A900A1455A</string>
+				<string>E5490F921BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F781BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F7D1BADD8A900A1455A</string>
+				<string>E5490F7E1BADD8A900A1455A</string>
+				<string>E5490F831BADD8A900A1455A</string>
+				<string>E5490F841BADD8A900A1455A</string>
+				<string>E5490F861BADD8A900A1455A</string>
+				<string>E5490F891BADD8A900A1455A</string>
+				<string>E5490F8B1BADD8A900A1455A</string>
+				<string>E5490F801BADD8A900A1455A</string>
+				<string>E5490F791BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Laundry App</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F791BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F7A1BADD8A900A1455A</string>
+				<string>E5490F7B1BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F7A1BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F7B1BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F7C1BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F7B1BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F7D1BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F7E1BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F7F1BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F7E1BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F801BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F811BADD8A900A1455A</string>
+			</array>
+			<key>currentVersion</key>
+			<string>E5490F811BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>Laundry_App.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>E5490F811BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>Laundry_App.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F821BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F801BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F831BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F841BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F851BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F841BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F861BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F871BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F871BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F881BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F861BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F891BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F8A1BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F891BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F8B1BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F8C1BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F8C1BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F8D1BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F8B1BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F8E1BADD8A900A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5490F991BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F8F1BADD8A900A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F901BADD8A900A1455A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5490F911BADD8A900A1455A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E5490F9F1BADD8A900A1455A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E5490F8E1BADD8A900A1455A</string>
+				<string>E5490F8F1BADD8A900A1455A</string>
+				<string>E5490F901BADD8A900A1455A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E5490F941BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Laundry AppTests</string>
+			<key>productName</key>
+			<string>Laundry AppTests</string>
+			<key>productReference</key>
+			<string>E5490F921BADD8A900A1455A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>E5490F921BADD8A900A1455A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Laundry AppTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E5490F931BADD8A900A1455A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>E5490F6E1BADD8A800A1455A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E5490F751BADD8A800A1455A</string>
+			<key>remoteInfo</key>
+			<string>Laundry App</string>
+		</dict>
+		<key>E5490F941BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>E5490F751BADD8A800A1455A</string>
+			<key>targetProxy</key>
+			<string>E5490F931BADD8A900A1455A</string>
+		</dict>
+		<key>E5490F951BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F981BADD8A900A1455A</string>
+				<string>E5490F961BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Laundry AppTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F961BADD8A900A1455A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5490F971BADD8A900A1455A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F971BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F981BADD8A900A1455A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Laundry_AppTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5490F991BADD8A900A1455A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5490F981BADD8A900A1455A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5490F9A1BADD8A900A1455A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5490F9B1BADD8A900A1455A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E5490F9C1BADD8A900A1455A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5490F9D1BADD8A900A1455A</string>
+				<string>E5490F9E1BADD8A900A1455A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5490F9D1BADD8A900A1455A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7C20B84B43FBE6E9E85CB0EB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Laundry App/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5490F9E1BADD8A900A1455A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>445E71F80C144FF2F6B96980</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Laundry App/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E5490F9F1BADD8A900A1455A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5490FA01BADD8A900A1455A</string>
+				<string>E5490FA11BADD8A900A1455A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5490FA01BADD8A900A1455A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Laundry AppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Laundry App.app/Laundry App</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5490FA11BADD8A900A1455A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Laundry AppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Laundry App.app/Laundry App</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E9441C7BFE1D3CAF724B6F07</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>E5490F6E1BADD8A800A1455A</string>
+</dict>
+</plist>
